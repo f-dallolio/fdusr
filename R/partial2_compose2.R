@@ -1,6 +1,6 @@
 #' Variants of `partial` and `compose`
 #'
-#' @param x
+#' @param x ...
 #' @param as_expr indicates the need for enexpr0
 #' @param fn_out returns the full orignal function body.
 #'
@@ -54,12 +54,12 @@ compose2 <- function(...){
 #' @rdname partial_compose
 #' @export
 #'
-pf <- partial2
+pfn <- partial2
 #'
 #' @rdname partial_compose
 #' @export
 #'
-cf <- compose2
+cfn <- compose2
 #'
 #' @rdname partial_compose
 #' @export

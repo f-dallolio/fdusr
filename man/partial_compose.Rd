@@ -4,8 +4,8 @@
 \alias{partial_compose}
 \alias{partial2}
 \alias{compose2}
-\alias{pf}
-\alias{cf}
+\alias{pfn}
+\alias{cfn}
 \alias{make_fn}
 \title{Variants of \code{partial} and \code{compose}}
 \usage{
@@ -13,13 +13,15 @@ partial2(x, as_expr = TRUE, fn_out = TRUE)
 
 compose2(...)
 
-pf(x, as_expr = TRUE, fn_out = TRUE)
+pfn(x, as_expr = TRUE, fn_out = TRUE)
 
-cf(...)
+cfn(...)
 
 make_fn(x)
 }
 \arguments{
+\item{x}{...}
+
 \item{as_expr}{indicates the need for enexpr0}
 
 \item{fn_out}{returns the full orignal function body.}

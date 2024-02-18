@@ -28,7 +28,7 @@ partial2 <- function(x, as_expr = TRUE, fn_out = TRUE ){
   new_ns <- base::getNamespaceName(environment(xx_fn))
   rlang::fn_fmls(xx_fn) <- new_args
 
-  if(fn_out){
+  if(fn_out & !isS3stdGeneric(xx_name)){
     out <- xx_fn
   } else {
     new_body <- rlang::call2(

@@ -1,4 +1,4 @@
-#' Split Path and get position
+#' Split `path` and get position
 #'
 #' @export
 #'

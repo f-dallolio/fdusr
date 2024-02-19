@@ -2,10 +2,10 @@
 % Please edit documentation in R/split_path.R
 \name{path_split_i}
 \alias{path_split_i}
-\title{Split Path and get position}
+\title{Split \code{path} and get position}
 \usage{
 path_split_i(x, i)
 }
 \description{
-Split Path and get position
+Split \code{path} and get position
 }

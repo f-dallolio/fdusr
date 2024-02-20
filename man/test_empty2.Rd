@@ -3,18 +3,15 @@
 \name{test_empty2}
 \alias{test_empty2}
 \alias{is_empty2}
-\alias{is_scalar_empty2}
 \alias{are_empty2}
 \alias{not_empty2}
 \alias{all_empty2}
 \alias{not_all_empty2}
-\alias{\%|0|\%}
+\alias{\%|x|\%}
 \alias{if_empty2}
 \title{Test for NULLs}
 \usage{
 is_empty2(x)
-
-is_scalar_empty2(x)
 
 are_empty2(x)
 
@@ -24,7 +21,7 @@ all_empty2(x)
 
 not_all_empty2(x)
 
-x \%|0|\% y
+x \%|x|\% y
 
 if_empty2(x, y = x)
 }

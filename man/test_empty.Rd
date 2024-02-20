@@ -3,7 +3,6 @@
 \name{test_empty}
 \alias{test_empty}
 \alias{is_empty}
-\alias{is_scalar_empty}
 \alias{are_empty}
 \alias{not_empty}
 \alias{all_empty}
@@ -13,8 +12,6 @@
 \title{Test for NULLs}
 \usage{
 is_empty(x)
-
-is_scalar_empty(x)
 
 are_empty(x)
 
@@ -26,7 +23,7 @@ not_all_empty(x)
 
 x \%|0|\% y
 
-if_empty(x, y = x)
+if_empty(x, y)
 }
 \description{
 Test for NULLs

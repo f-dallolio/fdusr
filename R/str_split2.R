@@ -17,7 +17,7 @@ str_split2 <- function(string, pattern, n, simplify = TRUE){
 #' @export
 str_split_i2 <- function(string, pattern, i, simplify = TRUE){
   out <- stringr::str_split(string, pattern) |>
-    lapply(`[[`, i)
+    lapply(iextract, i)
   if(simplify && length(out) == 1){
     return(unlist(out))
   }

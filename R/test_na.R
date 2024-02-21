@@ -11,7 +11,7 @@ is_na <- rlang::is_na
 #' @rdname test_na
 #' @export
 #'
-is_scalar_na <- function(x){
+is_na <- function(x){
   stopifnot(length(x) == 1)
   is_na(x)
 }
@@ -20,35 +20,35 @@ is_scalar_na <- function(x){
 #' @export
 #'
 are_na <- function(x){
-  sapply(x,is_scalar_na)
+  sapply(x,is_na)
 }
 #'
 #' @rdname test_na
 #' @export
 #'
 not_na <- function(x){
-  !sapply(x,is_scalar_na)
+  !sapply(x,is_na)
 }
 #'
 #' @rdname test_na
 #' @export
 #'
 all_na <- function(x){
-  all(sapply(x,is_scalar_na))
+  all(sapply(x,is_na))
 }
 #'
 #' @rdname test_na
 #' @export
 #'
 not_all_na <- function(x){
-  !all(sapply(x,is_scalar_na))
+  !all(sapply(x,is_na))
 }
 #'
 #' @rdname test_na
 #' @export
 #'
 `%na%` <- function(x, y){
-  if(is_scalar_na(x)){
+  if(is_na(x)){
     y
   } else {
     x

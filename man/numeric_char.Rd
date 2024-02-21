@@ -3,9 +3,12 @@
 \name{numeric_char}
 \alias{numeric_char}
 \alias{is_numeric_chr}
+\alias{as_numeric_chr}
 \title{Character vector as numeric}
 \usage{
 is_numeric_chr(x)
+
+as_numeric_chr(x)
 }
 \description{
 Character vector as numeric

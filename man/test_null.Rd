@@ -3,7 +3,6 @@
 \name{test_null}
 \alias{test_null}
 \alias{is_null}
-\alias{is_scalar_null}
 \alias{are_null}
 \alias{not_null}
 \alias{all_null}
@@ -12,9 +11,9 @@
 \alias{if_null}
 \title{Test for NULLs}
 \usage{
-is_null()
+is_null(x)
 
-is_scalar_null(x)
+is_null(x)
 
 are_null(x)
 

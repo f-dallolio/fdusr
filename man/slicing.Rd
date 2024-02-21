@@ -3,11 +3,17 @@
 \name{slicing}
 \alias{slicing}
 \alias{vec_slice_pos}
+\alias{vslice}
+\alias{lslice}
 \alias{vec_slice_head}
 \alias{vec_slice_tail}
 \title{Title}
 \usage{
-vec_slice_pos(x, i, ..., rev = FALSE)
+vec_slice_pos(x, i, ..., .sort = TRUE)
+
+vslice(x, i, ..., .sort = TRUE)
+
+lslice(x, i)
 
 vec_slice_head(x, n)
 

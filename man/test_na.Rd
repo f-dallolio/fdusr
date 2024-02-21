@@ -3,7 +3,6 @@
 \name{test_na}
 \alias{test_na}
 \alias{is_na}
-\alias{is_scalar_na}
 \alias{are_na}
 \alias{not_na}
 \alias{all_na}
@@ -14,7 +13,7 @@
 \usage{
 is_na(x)
 
-is_scalar_na(x)
+is_na(x)
 
 are_na(x)
 

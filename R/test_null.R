@@ -11,7 +11,7 @@ is_null <- is.null
 #' @rdname test_null
 #' @export
 #'
-is_scalar_null <- function(x){
+is_null <- function(x){
   stopifnot(length(x) == 1)
   is_null(x)
 }
@@ -20,28 +20,28 @@ is_scalar_null <- function(x){
 #' @export
 #'
 are_null <- function(x){
-  sapply(x,is_scalar_null)
+  sapply(x,is_null)
 }
 #'
 #' @rdname test_null
 #' @export
 #'
 not_null <- function(x){
-  !sapply(x,is_scalar_null)
+  !sapply(x,is_null)
 }
 #'
 #' @rdname test_null
 #' @export
 #'
 all_null <- function(x){
-  all(sapply(x,is_scalar_null))
+  all(sapply(x,is_null))
 }
 #'
 #' @rdname test_null
 #' @export
 #'
 not_all_null <- function(x){
-  !all(sapply(x,is_scalar_null))
+  !all(sapply(x,is_null))
 }
 #'
 #' @rdname test_null
